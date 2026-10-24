@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "ouidah-heritage-day",
+    "title": "Ouidah Heritage Day",
+    "summary": "Placeholder text about the Route des Esclaves and the Door of No Return.",
+    "price": "45,000 XOF",
+    "duration": "1 day",
+    "inclusions": ["Guide", "Transport", "Lunch"],
+    "groupSize": "2-8",
+    "meetingPoint": "Cotonou hotel pickup"
+  },
+  {
+    "slug": "ganvie-stilt-village",
+    "title": "Ganvié Stilt Village",
+    "summary": "Placeholder text about the boat trip to the lake village.",
+    "price": 35,
+    "duration": "half day",
+    "inclusions": "guide, boat, water",
+    "groupSize": "max 6",
+    "meetingPoint": "Abomey-Calavi jetty"
+  },
+  {
+    "slug": "cotonou-city-tour",
+    "title": "Cotonou City Tour",
+    "summary": "Placeholder text about markets, crafts and the waterfront.",
+    "price": "$60",
+    "duration": "4hrs",
+    "inclusions": ["Guide"],
+    "groupSize": 10,
+    "meetingPoint": "TBD"
+  },
+  {
+    "slug": "lagos-to-cotonou-weekend",
+    "title": "Lagos to Cotonou Weekend",
+    "summary": "Placeholder text about a two-day trip for Lagos-based travelers.",
+    "price": "€120",
+    "duration": "2 days",
+    "inclusions": "hotel; transport",
+    "groupSize": "4 to 12",
+    "meetingPoint": "Seme-Krake border"
+  }
+]
