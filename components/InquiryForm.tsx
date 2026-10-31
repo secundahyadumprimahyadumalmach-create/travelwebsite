@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { tours } from "@/lib/tours";
+import type { FormErrors } from "@/lib/validation";
 
 export default function InquiryForm() {
   const [error, setError] = useState("");
+  const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -36,8 +38,12 @@ export default function InquiryForm() {
           ))}
         </select>
       </label>
-      <label>Travel date<input name="date" type="date" className={field} /></label>
-      <label>Number of travelers<input name="guests" type="number" className={field} /></label>
+      <label>Travel date<input name="date" type="date" className={field} />
+        {errors.date && <span className="mt-1 block text-red-700">{errors.date}</span>}
+      </label>
+      <label>Number of travelers<input name="guests" type="number" className={field} />
+        {errors.guests && <span className="mt-1 block text-red-700">{errors.guests}</span>}
+      </label>
       <label>Notes<textarea name="notes" rows={4} className={field} /></label>
       {error && <p className="text-red-700">{error}</p>}
       <button type="submit" className="self-start rounded bg-lagoon px-6 py-3 font-semibold text-white">
